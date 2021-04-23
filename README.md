@@ -6,10 +6,15 @@ Susceptibles de fonctionner ou non , ne vous attendez pas à la moindre assistan
 # Contenu:
 
 # jvc_topic_watcher.py:
+# Utilisation
+ python3 jvc_topic_watcher.py 
 
-Un script s'appuyant sur requests et bs4 pour récupérer les sujets de la première page du Forum Blabla 18-25 ans de Jeuxvideo.com.
+Un script Python3 s'appuyant sur requests et bs4 pour récupérer les sujets de la première page du Forum Blabla 18-25 ans de Jeuxvideo.com.
+Utilise aussi pynput pour arrêter l'éxecution à l'appui de la touche q
 Peut-être importé comme un module à la conditions que ses dépendances soient installées
 
 //TODO
+
 Ajouter le requirements.txt
+
 Ajouter la possibilité de récupérer plusieurs pages en même temps
