@@ -11,7 +11,7 @@ Susceptibles de fonctionner ou non , ne vous attendez pas à la moindre assistan
 
 Un script Python3 s'appuyant sur requests et bs4 pour récupérer les sujets de la première page du Forum Blabla 18-25 ans de Jeuxvideo.com.
 
-Parfaitement inutile donc absolument indispensable.
+> Parfaitement inutile donc absolument indispensable.
 
 Utilise aussi pynput pour arrêter l'éxecution à l'appui de la touche q
 
