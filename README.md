@@ -24,7 +24,7 @@ Peut-être importé comme un module à la conditions que ses dépendances soient
 
 2)python3 insta_followers_scraper.py "page_a_scraper" 
 
-Un script Python3 s'apppuyant sur Selenium pour récupérer la liste de follower d'un compte donné.
+Un script Python3 s'apppuyant sur Selenium pour récupérer la liste de follower d'un compte Instagram donné.
 
 //TODO
 
