@@ -18,6 +18,15 @@ Utilise aussi pynput pour arrêter l'éxecution à l'appui de la touche q
 
 Peut-être importé comme un module à la conditions que ses dépendances soient installées
 
+//TODO
+
+* Ajouter le requirements.txt
+
+* Ajouter la possibilité de récupérer plusieurs pages en même temps
+
+* Implémenter le parsing d'arguments
+* Suite de scripts de scraping des forums jvc dans le cadre d'un éventuel projet de Data Science
+
 # insta_followers_scraper.py:
 # Utilisation
 1)Remplacer mail et password dans la fonction main par les identifiants d'un compte instagram valide qui se connectera pour scraper les followers, changer l'user agent si nécessaire (variable uastring)
@@ -26,10 +35,8 @@ Peut-être importé comme un module à la conditions que ses dépendances soient
 
 Un script Python3 s'apppuyant sur Selenium pour récupérer la liste de follower d'un compte Instagram donné.
 
+
 //TODO
 
-* Ajouter le requirements.txt
-
-* Ajouter la possibilité de récupérer plusieurs pages en même temps
-
-* Implémenter le parsing d'arguments
+* Prise en charge des proxy
+* Scraping sur plusieurs pages en parallèle
