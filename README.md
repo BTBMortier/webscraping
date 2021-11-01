@@ -21,6 +21,7 @@ Peut-être importé comme un module à la conditions que ses dépendances soient
 # insta_followers_scraper.py:
 # Utilisation
 1)Remplacer mail et password dans la fonction main par les identifiants d'un compte instagram valide qui se connectera pour scraper les followers, changer l'user agent si nécessaire (variable uastring)
+
 2)python3 insta_followers_scraper.py "page_a_scraper" 
 
 Un script Python3 s'apppuyant sur Selenium pour récupérer la liste de follower d'un compte donné.
