@@ -1,5 +1,5 @@
 # webscraping
-Un repo contenant mes scripts de web scraping parfaitement inutiles.
+Un repo contenant mes scripts de web scraping.
 
 Susceptibles de fonctionner ou non , ne vous attendez pas à la moindre assistance technique de ma part.
 
