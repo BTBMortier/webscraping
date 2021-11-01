@@ -40,3 +40,4 @@ Un script Python3 s'apppuyant sur Selenium pour récupérer la liste de follower
 
 * Prise en charge des proxy
 * Scraping sur plusieurs pages en parallèle
+* Ajouter le requirements.txt
