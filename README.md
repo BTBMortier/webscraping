@@ -16,7 +16,7 @@ Un script Python3 s'appuyant sur requests et bs4 pour récupérer les sujets de 
 
 Utilise aussi pynput pour arrêter l'éxecution à l'appui de la touche q
 
-Peut-être importé comme un module à la conditions que ses dépendances soient installées
+Peut-être importé comme un librairie à la conditions que ses dépendances soient installées
 
 //TODO
 
