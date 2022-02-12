@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
-
-import os
+import os 
 import sys
 import time
 import argparse
@@ -10,26 +8,20 @@ from pynput.keyboard import KeyCode
 from bs4 import BeautifulSoup as bs
 
 
-def get_page():
+
+def get_topics():
     url = "https://www.jeuxvideo.com/forums/0-51-0-1-0-1-0-blabla-18-25-ans.htm"
     page = requests.get(url)
     soup = bs(page.content , 'html.parser')
     body = soup.body
-    return body
-
-def get_topics(body):
-    div = body.contents[5]
-    a   = div.contents[5]
-    b   = a.ul
-    topics = b.find_all("li",class_="")
+    topics = body.find_all("li",class_="")
+    topics = [t for t in topics if "data-id" in t.attrs]
+    topics = [t for t in topics if t.contents[1].contents[1].attrs["class"][0] != "icon-topic-pin"]
     return topics
 
 def get_topic_info(topics_obj):
     display = [] 
     for topic in topics_obj:
-        if topic.img['src'] == "/img/forums/topic-marque-off.png":
-            pass
-        else:
             tinfos  = []
             topax   = topic.a['title']
             auteur  = topic.span.find_next("span",target="_blank").text.strip()
@@ -46,6 +38,7 @@ def show_topics(display_arr):
         nposts  = display_arr[i][2]
         t_time  = display_arr[i][3]
         print(f' "{topic}" par {op} à {t_time} : {nposts} post(s)')
+    print("Appuies sur 'q' pour sortir de la boucle khey")
 
 
 def on_press(key):
@@ -66,12 +59,11 @@ if __name__ == '__main__':
     listener.start()
 
     while True:
-        body    = get_page()
-        topics  = get_topics(body)
+        print("\n" * 100)
+        topics  = get_topics()
         display = get_topic_info(topics)
         show_topics(display)
         time.sleep(r)
-        print("\n" * 100)
 
 
 
